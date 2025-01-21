@@ -13,7 +13,7 @@ title-block-banner: false
 ---
 
 :::{}
-![](assets/blog abstract.png){width=200 style="float: left; margin: 10px 10px 10px 0px;"}
+![](assets/blog abstract.png){width=150 style="float: left; margin: 5px 10px 0px 0px;"}
 
 Welcome! I'm an inter-disciplinary scientist at Allen Institute for Brain Science in Seattle. In my day job I build machine learning tools to understand organization principles of the mammalian brain. I have an undergraduate degree in Engineering Physics from IIT Bombay and a PhD in Physics from Northeastern University.
 :::
