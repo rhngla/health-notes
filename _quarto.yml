@@ -3,7 +3,7 @@ project:
   output-dir: ./docs
   render:
     - index.qmd
-    - posts/basic_plan/index.qmd
+    - posts/training-foundations/index.qmd
 
 website:
   title: "Health notes"
