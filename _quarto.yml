@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: ./docs
+  render:
+    - index.qmd
+    - posts/basic_plan/index.qmd
+
+website:
+  title: "Health notes"
+  navbar:
+    right:
+      - icon: github
+        href: https://github.com/rhngla/health
+  
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    
+    
+number-sections: true
+number-depth: 2
+highlight-style: pygments
+bibliography: refs.bib
+  
+editor:
+    render-on-save: true
