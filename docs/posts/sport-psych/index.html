@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rohan Gala">
+<meta name="dcterms.date" content="2025-08-28">
+
+<title>Dissecting mindset – Health notes</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0efdfa9573116734e35c8331e32f4437.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-9d8462b7f85ef9d25b833c932dac4310.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Health notes</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rhngla/health"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Dissecting mindset</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">fundamentals</div>
+    <div class="quarto-category">planning</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Rohan Gala </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 28, 2025</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">March 28, 2026</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<style type="text/css">
+caption, .table-caption {
+  text-align: left;
+}
+ .concept { background-color: #FFEE70; }
+</style>
+<p>[This is an early draft version.]</p>
+<p>My interest in understanding motivation and mindsets stems from conversations with friends and family around training regularly and appropriately building resilience around pain and injury.</p>
+<p>As a strength and conditioning coach, I can suggest appropriate entry points, troubleshoot movement patterns, help introduce structure, plan progressions, adjust existing routines to cover more bases, etc. But much of this only builds on an already established practice.</p>
+<p>Most folks already know that physical health is important. They also have a sense of steps they could take towards maintaining or improving it for themselves. But many seem to hit a wall when it comes to acting on those steps.</p>
+<p>Common failure modes included shifting priorities, short bursts of an intense focus along some narrow metric of health followed by periods of complete neglect, an acquired sense of guilt and shame around health, irrational fears around structured movement, self-damaging narratives around ability and capacity etc. Such a brittle mindset in the domain of health and physical fitness is all too common.</p>
+<section id="reflecting-on-what-shaped-my-mindset" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="reflecting-on-what-shaped-my-mindset"><span class="header-section-number">1</span> Reflecting on what shaped my mindset</h2>
+<p>It led me to revisit my own mindset, and how it evolved with time and experience. I was convinced that physical training feeds into better quality of life, increased physiological awareness, and knowledge around it enables better use of healthcare systems. Not knowing the exact set of actions at the outset was not a deterrant, I had embraced the idea of figuring it out as I went along. Clarity on the high-level intent was helpful to persist and put in effort to iteratively compose and adjust the training routine.</p>
+<p>I had already accumulated a formal education in physics, neuroscience, and systems biology by that time. This lowered the barrier to intellectually link concepts in anatomy, motor learning and control, and physiological adaptations etc. with practical aspects of movement, training, nutrition, and recovery.</p>
+<p>I focussed on consistency initially, added layers to my practice over time. I also felt supported just knowing that I had access to a physical therapist who I trusted. This put a bound on my own fears around hurting myself. I used this access to validate my broader process when I did visit the physical therapist about specific aches and pains.</p>
+<p>I was also fortunate to largely have a blank slate in terms of feelings around exercising at gyms. I didn’t have expectations for what working out should look like, had no shame around starting with light weights, no identity tied to performance. My local gym also fosters a welcoming, beginner-friendly environment (shoutout to <a href="https://www.raincityfit.com/">Rain City Fit</a>!).</p>
+<p>This allowed me to engage with my practice from a place of playfulness. I didn’t care for external judgment. Staying in the present, fully focused on executing movements - the feeling of <em>flow</em> - felt easy to access at the gym.</p>
+<p>Over time, positive experiences at the gym helped to remodel my approach towards painful experiences and injuries as well. I noticed that such experiences had stopped evoking negative emotional responses (e.g.&nbsp;anxiety / panic). Education and past recovery from injuries had me seeing these as modifiable states. I had started treating brushes with pain as excuses to troubleshoot movement patterns, and understand particular anatomy in greater detail. It fueled some self-experiments with rehabilitation from a place of curiosity without sacrificing the ability to ask for help.</p>
+<p>My sustained interest also opened new doors. I got to train some friends informally, got to shadow at the physical therapists’ clinic for a while - both of these experiences helped to calibrate my own understanding of the process from a <mark>self-distanced</mark> perspective.</p>
+<p>I couldn’t have planned for much of this, and benefitted from certain things falling in place. I’d like to be able to transfer the conviction in why to train, clarity in what to train for, and confidence in approaching setbacks to friends and family in the limited time I get to spend with them. How to go about this?</p>
+</section>
+<section id="teaching-and-coaching-others" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="teaching-and-coaching-others"><span class="header-section-number">2</span> Teaching and coaching others</h2>
+<p>My naïve approach to helping folks build a sustainable physical practice was to share knowledge. But I realized that most folks don’t already have the formal background to connect intellectual concepts to practical action. Most adults also don’t have the bandwidth to acquire that formal background, even if they’d like to. More importantly, their motivation isn’t necessarily rooted in an intellectual grounding to the degree it did for me personally.</p>
+<p>I also thought to lower inertia by getting friends and family into the gym a few times with me as a social hangout. However this also doesn’t translate to a sustainable practice for them. Most went along because I asked them to, and this kind of motivation is fragile.</p>
+<p>Looking for answers here led me to <mark>self-determination theory</mark>, <span class="citation" data-cites="ryan2000sdt">(<a href="#ref-ryan2000sdt" role="doc-biblioref">Ryan and Deci 2000</a>)</span>. This theory suggests that motivation can be described along an <mark>extrinsic-intrinsic</mark> axis.</p>
+<div id="tbl-machine" class="rpe striped hover borderless responsive-sm table-caption quarto-float quarto-figure quarto-figure-center anchored" style="font-size: 95%; width: 90%; margin: auto auto;">
+<figure class="quarto-float quarto-float-tbl figure">
+<div aria-describedby="tbl-machine-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="table-responsive-sm">
+<table class="rpe table-striped table-hover table-borderless table-caption table">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 20%">
+<col style="width: 28%">
+<col style="width: 26%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>External <span class="math inline">\(\rightarrow\)</span></th>
+<th>Introjected <span class="math inline">\(\rightarrow\)</span></th>
+<th>Integrated <span class="math inline">\(\rightarrow\)</span></th>
+<th>Intrinsic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Drivers</strong></td>
+<td>External reward/punishment</td>
+<td>Internal pressure</td>
+<td>Personally valuing the act</td>
+<td>Enjoyment</td>
+</tr>
+<tr class="even">
+<td><strong>Characteristics</strong></td>
+<td>Compliance, reactivity</td>
+<td>Focus on approval from self and others, ego involvement</td>
+<td>Self-endorsement of goals, congruence</td>
+<td>Interest and inherent satisfaction</td>
+</tr>
+<tr class="odd">
+<td><strong>Self talk</strong></td>
+<td><em>They want me to, so I will …</em></td>
+<td><em>I should/must …</em></td>
+<td><em>I want to, because …</em></td>
+<td>Almost none</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-tbl" id="tbl-machine-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: <strong>Extrinsic-Intrinsic motivation axis</strong> The internal monologue row is based on my own understanding; remaining is adapted from a recent lecture by one of two co-authors of Self Determination Theory <span class="citation" data-cites="ryan2025aaltolec">(<a href="#ref-ryan2025aaltolec" role="doc-biblioref">Richard Ryan 2025</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>Further, this theory views <mark>autonomy</mark>, <mark>competence</mark>, and <mark>connectedness</mark> as basic psychological needs. Supporting these needs can shift motivation from the extrinsic kind towards the intrinsic kind (and that undermining them moves motivation in the opposite direction as well).</p>
+<ul>
+<li>Conferring autonomy is about enabling meaningful choices which in turn support ownership of actions and accomplishments.</li>
+<li>Building competence entails equipping with knowledge and skills to meet challenges in that domain.</li>
+<li>Supporting connectedness is about building relationships that are richer, beyond just the transactional kind.</li>
+</ul>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>A case study: SDT applied to my mom
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>When I first tried to coach my mom, I noticed that she her motivation to engage in structured physical exercise was largely extrinsic. She vaguely knew it was generally good for her, and felt like exercise could help certain alleviate aches and pains. In the absence of pain drivers, she was only sporadically engage with it for a few weeks at a time. She’d try too many different exercises, didn’t have a consistent plan. This meant she would modulate the intensity entirely based on how she felt that day. On occasion she’d experience soreness, interpret it as negative feedback and drop certain exercises altogether.</p>
+<p>While she was indeed choosing to exercise, that autonomy was brittle in the face of challenges. At times, she lacked competence to interpret physical sensations to meaningfully guide training. In many cases she did not have the ability to do certain exercises without awkwardly compensating and loading unintended areas, nor did she know appropriate modifications to swap exercises for something more aligned with her current ability.</p>
+<p>So I leaned on connectedness - that she trusted me, and was willing to attempt certain exercises and even accommodate minor discomfort in my presence - to gradually build autonomy and competence. Over time, I explained to her a richer way to describe sensations, reasoning patterns behind choices in training variables, tools to troubleshoot herself, etc. and encouraged independent planning and execution of movements.</p>
+</div>
+</div>
+</div>
+<p>Developing intrinsic motivation is a good start, and contributes to building consistency. But I also want to encourage folks to engage with challenges that will ultimately lead to growth. This is typically achieved through structuring a mixture of <mark>process goals</mark> and <mark>outcome goals</mark>. Collaboratively setting process goals suits new-comers. These reduce reliance on external validation and are easier entry points to build confidence and competence. Setting outcome goals on the other hand can feel motivating for some but amp up anxiety and fear of failure for others.</p>
+<p>I learned that <mark>goal orientation theory</mark> provides a formal framework to understand this puzzle. It views a person’s orientation towards challenges along an <mark>approach-avoid</mark> axis, and the intention they gravitate towards along a <mark>mastery-performance</mark> axis. Understanding individuals through this lens is helpful to then negotiate around a <mark>hierarchy of goals</mark> that might serve as playful challenges that buildup rather than fuel aversion around the idea of working out.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>A case study: Goal orientation theory applied to my mom
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>My mom has low risk tolerance, but is willing to put in the work to get things right (i.e.&nbsp;has an intent to master). Experience with pain and injuries without accessible support systems drive her to an avoidant approach. The perceived stakes of failure are high. Her framing is more along the lines of “what if exercise leads to injury?”, which dominates the alternative framing of “what if exercise expands and extends independence?”.</p>
+<p>I set up easy entry points, conservatively approach current ability, and then rely mostly on process goals. I ask her to execute what she is familiar with and already able to - but I modulate the difficulty level over time. I’m intentional about giving her positive feedback around the consistency and the effort, especially for certain exercises where she had previously experienced discomfort.</p>
+</div>
+</div>
+</div>
+<p>This descriptive theory largely helps me find better entry points suited to the individual. But the broader idea is to set challenging goals, and at the edge of one’s current ability - so experiencing failure at those goals is inevitable. I noticed that some folks can channel it, use it to drive future effort. Yet for others, this dismantles motivation and leads to disengagement.</p>
+<p>Digging deeper into this, I came across <mark>attribution theory</mark>. This theory suggests that people explain a given outcome quite differently along dimensions of <mark>locus</mark> - whether they claim responsibility for it themselves or blame external factors, <mark>stability</mark> - whether they view the contributing factors as temporary or permanent, and <mark>controllability</mark> - whether they feel in control and able to change those factors. Walking through thoughts the person has along these dimensions can be helpful to adjust their takeaways from failure.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>A case study: Attribution theory applied to my mom
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>My mom couldn’t do a leg raise initially in my presence, and experienced some acute pain when she attempted it. Her immediate reactions were along the lines of “my knee can’t do this”. From the lens of attribution theory, the locus is internal (herself). The framing suggests next to no room for this condition to change - her remark is definitive at face value. Finally, she didn’t understand the different ways one could modify that exercise - which contributes to then see the controllable aspects of the experience. In my absence, she would likely have likely abandon the exercise at this point.</p>
+<p>While there is no denying that the pain is real, I can point out that it is contextual. I could also guide her through some isometrics in easy ranges and have her experience herself that the pain is modifiable (i.e.&nbsp;not stable). I can make adjustments to the machine - reduce the range of motion, start from a less challenging position, reduce load etc. to demonstrate that there is a way to execute the movement without pain, and through that help her see her condition as controllable. Finally I can also try to help her reframe the narrative - “my knee can’t do this in this position / right now / without warming up”</p>
+</div>
+</div>
+</div>
+<p>The concepts I’ve discussed so far cover how to fuel intrinsic motivation, structure goals, and channel response to challenges. I still wondered why guilt and shame is such a common theme in conversations around health. <mark>Self-discrepancy theory</mark> was helpful to understand this better.</p>
+<p>This theory suggests that individuals hold multiple representations of self. There is the <mark>actual self</mark> - the notion of who we think we are. But then there is also the <mark>ideal self</mark> - who we aspire to be, and the <mark>ought self</mark> - who we think others expect us to be. This theory suggests that the nature of negative emotions is related to gaps between these representations. Sadness, disappointment, and emptiness tend to be associated with a gap between the ideal and actual self. Anxiety, guilt, and shame tend to be associated with a gap between the ought and actual self.</p>
+<p>This suggests that many struggle with a perceived gap between their actual self and their ought self when it comes to health. Recognizing these representations is a first step towards building a toolkit to manipulate it. Developing the ability to think about the accuracy of the perceived gap, and also reflect on the emotional response to it from a distanced perspective can then enable interpreting discrepancies as signals that drive meaningful action leading to growth.</p>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-ryan2025aaltolec" class="csl-entry" role="listitem">
+Richard Ryan. 2025. <span>“Self-Determination Theory, Work Motivation &amp; Performance.”</span> Youtube. <a href="https://www.youtube.com/watch?v=ww4QGMV94A8">https://www.youtube.com/watch?v=ww4QGMV94A8</a>.
+</div>
+<div id="ref-ryan2000sdt" class="csl-entry" role="listitem">
+Ryan, Richard M, and Edward L Deci. 2000. <span>“Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being.”</span> <em>American Psychologist</em> 55 (1): 68.
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
