@@ -91,6 +91,9 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -165,7 +168,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">March 13, 2026</p>
+      <p class="date-modified">June 12, 2026</p>
     </div>
   </div>
     
@@ -182,7 +185,7 @@ caption, .table-caption {
 }
 </style>
 <style>
-    .concept { background-color: #FFEE70; }
+    mark { background-color: #FFF8CC; }
 </style>
 <section id="introduction" class="level2 unnumbered page-columns page-full">
 <h2 class="unnumbered anchored" data-anchor-id="introduction">Introduction</h2>
@@ -233,7 +236,61 @@ Table&nbsp;1: <strong>The body as a machine:</strong> As a crude engineering ana
 <p>On the other hand, <a href="https://www.youtube.com/watch?v=tw54LmxR21A">this cool talk by Philip Ball</a> points out limitations of <em>machine</em> metaphors in describing biological systems.</p>
 </div></div><p>My motivation is general health. When I started thinking about this <a href="https://rhngla.substack.com/p/fitness">a few years ago</a>, I was already willing to put in time and energy towards improving my physical health. Yet, I was unclear about which exercises to adopt, how often to do them, how to calibrate effort etc. This is a common problem that many in a similar situation face.</p>
 <p>To understand these topics a bit better I worked my way through a standard reference manual for strength and conditioning coaches <span class="citation" data-cites="haff2015essentials">(<a href="#ref-haff2015essentials" role="doc-biblioref">Haff and Triplett 2015</a>)</span> and a handful of relevant review papers. I continue to calibrate the utility of concepts I picked up this way by incorporating them into my own practice. Below is a version of key concepts and crude-but-useful ways to reason with them towards building a rounded physical training program for yourself.</p>
-<p>This article is organized around the main components of conventional strength and conditioning programs: cardiovascular-, resistance-, and plyometric training.</p>
+<p>This article is organized around the main components of conventional strength and conditioning programs: cardio-vascular—, resistance—, and plyometric training.</p>
+<div id="fig-trainable-attr" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-trainable-attr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph 
+
+    ATH(Athletic Capacity) --&gt; CVT(Cardio-vascular)
+    ATH(Athletic Capacity) --&gt; RES(Resistance)
+    ATH(Athletic Capacity) --&gt; PLY(Plyometrics)
+
+&nbsp; &nbsp; CVT --&gt; CVTA(Sprint-like)
+&nbsp; &nbsp; CVT --&gt; CVTC(Tempo-like)
+&nbsp; &nbsp; CVT --&gt; CVTB(Endurance-like)
+
+
+&nbsp; &nbsp; RES --&gt; RESA(Strength)
+&nbsp; &nbsp; RES --&gt; RESB(Endurance)
+&nbsp; &nbsp; RES --&gt; RESC(Power)
+&nbsp; &nbsp; RES --&gt; RESD(Hypertrophy)
+
+&nbsp; &nbsp; PLY --&gt; PLYA(Rhythm)
+    PLY --&gt; PLYB(Speed)
+    PLY --&gt; PLYC(ROM)
+    PLY --&gt; PLYD(Impulse)
+
+
+&nbsp; &nbsp; %% Define pastel styles with matching stroke and black font
+&nbsp; &nbsp; classDef group0 fill:#fff0f5,stroke:#fff0f5,color:#000000;
+&nbsp; &nbsp; classDef group1 fill:#e8f5ff,stroke:#e8f5ff,color:#000000;
+&nbsp; &nbsp; classDef group2 fill:#eef0ff,stroke:#eef0ff,color:#000000;
+  &nbsp; classDef group3 fill:#fff4e5,stroke:#fff4e5,color:#000000;
+
+&nbsp; &nbsp; %% Apply styles to nodes
+    class ATH group0;
+    class CVT,CVTA,CVTB,CVTC group1;
+    class RES,RESA,RESB,RESC,RESD group2;
+&nbsp; &nbsp; class PLY,PLYA,PLYB,PLYC,PLYD group3;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><strong>Trainable attributes:</strong></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-trainable-attr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Focus areas within the three broad categories discussed in this article.
+</figcaption>
+</figure>
+</div>
 <div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -264,14 +321,14 @@ Table&nbsp;1: <strong>The body as a machine:</strong> As a crude engineering ana
 <img src="training-frequency.png" class="img-fluid figure-img" width="600">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-training-dose-frequency-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: <strong>Training dose and frequency:</strong> Under- and over-training are common problems that can be discouraging for those at the beginning of their journey. Managing the within-session training variables is crucial, and so is timing between sessions. Setting training variables too aggressively can lead to breakdowns (e.g.&nbsp;injuries), but setting them too conservatively can end up being inadequate for inducing appreciable physiological adaptations. Too much time between sessions can prevent accumulation of beneficial adaptations, whereas too little time prevents recovery. Figure adapted from <span class="citation" data-cites="furrer2023molecular">(<a href="#ref-furrer2023molecular" role="doc-biblioref">Furrer et al. 2023</a>)</span>.
+Figure&nbsp;2: <strong>Training dose and frequency:</strong> Under- and over-training are common problems that can be discouraging for those at the beginning of their journey. Managing the within-session training variables is crucial, and so is timing between sessions. Setting training variables too aggressively can lead to breakdowns (e.g.&nbsp;injuries), but setting them too conservatively can end up being inadequate for inducing appreciable physiological adaptations. Too much time between sessions can prevent accumulation of beneficial adaptations, whereas too little time prevents recovery. Figure adapted from <span class="citation" data-cites="furrer2023molecular">(<a href="#ref-furrer2023molecular" role="doc-biblioref">Furrer et al. 2023</a>)</span>.
 </figcaption>
 </figure>
 </div>
 </section>
 <section id="cardio-vascular-training-cvt" class="level2 page-columns page-full" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="cardio-vascular-training-cvt"><span class="header-section-number">1</span> Cardio-vascular training (CVT)</h2>
-<p>Walking, running, cycling, swimming, stair-climbing, and cross-country skiing, ski-ergs, rowing etc. are all activities that can be used for cardiovascular training (CVT). Intensity and duration of activities are key training variables. In my opinion, the qualitative way of specifying these in <a href="#tbl-cvt" class="quarto-xref">Table&nbsp;2</a> is a reasonable level of detail in the context of CVT for those starting out. Quantitative measurements (e.g.&nbsp;with heart rate monitors, blood lactate measurements, VO<sub>2</sub>max tests etc.) have their place, but are not a pre-requisite for an effective plan.</p>
+<p>Walking, running, cycling, swimming, stair-climbing, and cross-country skiing, ski-ergs, rowing etc. are all activities that can be used for cardio-vascular training (CVT). Intensity and duration of activities are key training variables. In my opinion, the qualitative way of specifying these in <a href="#tbl-cvt" class="quarto-xref">Table&nbsp;2</a> is a reasonable level of detail in the context of CVT for those starting out. Quantitative measurements (e.g.&nbsp;with heart rate monitors, blood lactate measurements, VO<sub>2</sub>max tests etc.) have their place, but are not a pre-requisite for an effective plan.</p>
 <div id="tbl-cvt" class="rpe striped hover borderless responsive-sm quarto-float quarto-figure quarto-figure-center anchored" style="font-size: 90%; width: 60%; margin: auto auto;">
 <figure class="quarto-float quarto-float-tbl figure">
 <div aria-describedby="tbl-cvt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -305,14 +362,14 @@ Figure&nbsp;1: <strong>Training dose and frequency:</strong> Under- and over-tra
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-tbl" id="tbl-cvt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2: Types of cardiovascular training (CVT) sessions.
+Table&nbsp;2: Types of cardio-vascular training (CVT) sessions.
 </figcaption>
 </figure>
 </div>
 <section id="high-intensity-and-short-duration-sessions" class="level3">
 <h3 class="anchored" data-anchor-id="high-intensity-and-short-duration-sessions">High intensity and short duration sessions</h3>
 <ul>
-<li>These tend to be relatively more taxing (compared to a low intensity session with the same activity) on connective tissue (i.e.&nbsp;bones, joints, cartilage).</li>
+<li>These tend to be relatively more taxing (compared to a low intensity session with the same activity) on connective tissue (e.g.&nbsp;bones, joints, cartilage).</li>
 <li>The main goal for such sessions is to stimulate adaptations for maximal power output, and faster recovery after bouts of maximal effort.</li>
 <li>The duration and intensity of effort within a session can be selected to focus on different <mark>energy systems</mark>.</li>
 <li>The anaerobic system is the primary responder for bouts of maximal effort that last up to 30 seconds.</li>
@@ -333,7 +390,7 @@ Table&nbsp;2: Types of cardiovascular training (CVT) sessions.
 <p>I’ll highlight some terms that have specific definitions in research settings, but the distinctions are not of practical importance for effective training for the general population.</p>
 <ul>
 <li>Aerobic threshold (AeT), ventilatory threshold I (VT<sub>I</sub>), FATmax, upper ends of zone 1 (3 zone model) or zone 2 (5 zone model) correspond to a similar training intensity. Subjectively, this is a steady effort at the upper end of what feels easy to sustain for &gt; 30 minutes.</li>
-<li>Analogously, anaerobic threshold, ventilatory threshold II (VT<sub>II</sub>), and lactate threshold (LT) also correspond to a similar training intensity. Subjectively, this is a hard effort that can just about be sustained for 30 minutes. ****</li>
+<li>Analogously, anaerobic threshold, ventilatory threshold II (VT<sub>II</sub>), and lactate threshold (LT) also correspond to a similar training intensity. Subjectively, this is a hard effort that can just about be sustained for 30 minutes.</li>
 </ul>
 </div></div></section>
 <section id="low-intensity-and-long-duration-sessions" class="level3">
@@ -376,7 +433,7 @@ Table&nbsp;2: Types of cardiovascular training (CVT) sessions.
 <h3 class="anchored" data-anchor-id="exercise-selection-frequency">Exercise selection &amp; frequency</h3>
 <ul>
 <li>Modify any activity e.g.&nbsp;using a treadmill, stationary bike, rower, ski-erg, or being active outdoors to fit the intensity and duration pattern for CVT session A, B, or C. One can mix activities to manage fatigue in a particular system (e.g.&nbsp;swimming for CVT session C would help manage fatigue in muscles and joints involved in running in CVT session A).</li>
-<li>Cycling through sessions A, B, C over a span of 7-10 days at a time would be a good starting point. If this ends up inducing too much fatigue, reduce the effort level within sessions instead of cutting down on sessions, <a href="#fig-training-dose-frequency" class="quarto-xref">Figure&nbsp;1</a>.</li>
+<li>Cycling through sessions A, B, C over a span of 7-10 days at a time would be a good starting point. If this ends up inducing too much fatigue, reduce the effort level within sessions instead of cutting down on sessions, <a href="#fig-training-dose-frequency" class="quarto-xref">Figure&nbsp;2</a>.</li>
 <li>I recommend choosing a conservative starting point (let’s say 20% below current ability) and progressing over a few weeks to get close to actual ability.</li>
 <li>As a rule of thumb, change just one of the training variables in a direction that increases challenge by a small amount (let’s say 5% per week - and even less if changing multiple variables simultaneously).</li>
 <li>Repeating the same activities for a month or more would make it easier to track progress, and fine-tune your subjective feeling of effort.</li>
@@ -387,7 +444,7 @@ Table&nbsp;2: Types of cardiovascular training (CVT) sessions.
 </section>
 <section id="resistance-training-rt" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="resistance-training-rt"><span class="header-section-number">2</span> Resistance training (RT)</h2>
-<p>Exercises using dumbells, kettlebells, barbells, specialized machines, and bodyweight can all count towards resistance training (RT). Training variables commonly manipulated in resistance training include load, repetitions, sets, tempo, and rest intervals. Such variables can be adjusted to focus more on adaptations for <mark>hypertrophy</mark>, <mark>endurance</mark>, <mark>power</mark>, and <mark>strength</mark>. These are not entirely independent attributes. The different kinds of training stimuli lead to preferential but not exclusive development of these attributes.</p>
+<p>Exercises using dumbbells, kettlebells, barbells, specialized machines, and bodyweight can all count towards resistance training (RT). Training variables commonly manipulated in resistance training include load, repetitions, sets, tempo, and rest intervals. Such variables can be adjusted to focus more on adaptations for <mark>hypertrophy</mark>, <mark>endurance</mark>, <mark>power</mark>, and <mark>strength</mark>. These are not entirely independent attributes. The different kinds of training stimuli lead to preferential but not exclusive development of these attributes.</p>
 <section id="path-to-learning-exercises" class="level3">
 <h3 class="anchored" data-anchor-id="path-to-learning-exercises">Path to learning exercises</h3>
 <ul>
@@ -422,8 +479,8 @@ Table&nbsp;2: Types of cardiovascular training (CVT) sessions.
 <h3 class="anchored" data-anchor-id="sets-repetitions">Sets &amp; Repetitions</h3>
 <p><mark>Work sets</mark> (i.e.&nbsp;excluding any warmup sets) of any exercise within a given session follow one of the following patterns:</p>
 <ul>
-<li>(~3) sets with medium load and high (~10) repetition</li>
-<li>(~3) sets with high load and low (~5) repetitions</li>
+<li>(~3) sets with medium load and high (~10) repetitions.</li>
+<li>(~3) sets with high load and low (~5) repetitions.</li>
 </ul>
 <p>This holds for each exercise (and therefore for muscle groups used in that exercise). What qualifies as medium or high load depends on subjective ratings of effort (RPE, discussed <a href="#load-&amp;-effort">below</a> and <a href="#tbl-rpe" class="quarto-xref">Table&nbsp;3</a>).</p>
 <p><strong>Rough reasoning:</strong></p>
@@ -540,14 +597,14 @@ Table&nbsp;3: There is a rough equivalence between Rating of perceived exertion 
 <li>are within available range of motion.</li>
 <li>cover a broad range of stimuli.</li>
 </ol>
-<p>A broad classification of exercises is helpful in this regard, and I personally like the one presented by <span class="citation" data-cites="mcinneswatson2024youtube">(<a href="#ref-mcinneswatson2024youtube" role="doc-biblioref">McInnes Watson 2024</a>)</span> (adapated here in <a href="#fig-plyo-classification" class="quarto-xref">Figure&nbsp;2</a>).</p>
+<p>A broad classification of exercises is helpful in this regard, and I personally like the one presented by <span class="citation" data-cites="mcinneswatson2024youtube">(<a href="#ref-mcinneswatson2024youtube" role="doc-biblioref">McInnes Watson 2024</a>)</span> (adapted here in <a href="#fig-plyo-classification" class="quarto-xref">Figure&nbsp;3</a>).</p>
 <div id="fig-plyo-classification" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-plyo-classification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="plyo-classification.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plyo-classification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: <strong>Plyometric exercise classification:</strong> The range of motion (ROM) and force requirements can be used to conceptually group plyometric exercises. For example, quick and light <a href="https://www.youtube.com/watch?v=YqLplUCanfw">two-legged pogo hops</a> would be in the low active force and shallow ROM quadrant. <a href="https://www.youtube.com/watch?v=KsWyPw6w2i0">Depth-jump to box</a> would be in the high active force and deep ROM quadrant. Additional examples can be found in <span class="citation" data-cites="mcinneswatson2024youtube">(<a href="#ref-mcinneswatson2024youtube" role="doc-biblioref">McInnes Watson 2024</a>)</span>
+Figure&nbsp;3: <strong>Plyometric exercise classification:</strong> The range of motion (ROM) and force requirements can be used to conceptually group plyometric exercises. For example, quick and light <a href="https://www.youtube.com/watch?v=YqLplUCanfw">two-legged pogo hops</a> would be in the low active force and shallow ROM quadrant. <a href="https://www.youtube.com/watch?v=KsWyPw6w2i0">Depth-jump to box</a> would be in the high active force and deep ROM quadrant. Additional examples can be found in <span class="citation" data-cites="mcinneswatson2024youtube">(<a href="#ref-mcinneswatson2024youtube" role="doc-biblioref">McInnes Watson 2024</a>)</span>
 </figcaption>
 </figure>
 </div>
@@ -555,7 +612,7 @@ Figure&nbsp;2: <strong>Plyometric exercise classification:</strong> The range of
 <section id="frequency-intensity" class="level3">
 <h3 class="anchored" data-anchor-id="frequency-intensity">Frequency, intensity</h3>
 <ul>
-<li>Less intense versions of plyometric exercises (e.g.&nbsp;two-leg pogo hops) can be performed in every RT or CVT session.</li>
+<li>Less intense versions of plyometric exercises (e.g.&nbsp;two-legged pogo hops) can be performed in every RT or CVT session.</li>
 <li>More intense versions can be performed once (per category, e.g.&nbsp;trunk, lower body, upper body) every week.</li>
 <li>A rough starting point is 2-3 sets each with 20-40 rhythmic repetitions for low intensity exercises, and 2-3 sets of 5-10 repetitions for high intensity exercises.</li>
 <li>Do these at the beginning of workouts, when feeling fresh.</li>
