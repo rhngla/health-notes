@@ -4,7 +4,7 @@ project:
   render:
     - index.qmd
     - posts/training-foundations/index.qmd
-    - posts/sport-psych/index.qmd
+    - posts/why-psych/index.qmd
 
 website:
   title: "Health notes"
